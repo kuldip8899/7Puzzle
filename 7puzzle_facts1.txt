@@ -1,0 +1,59 @@
+(x1 Object)
+(x2 Object)
+(x3 Object)
+(x4 Object)
+(x5 Object)
+(x6 Object)
+(x7 Object)
+(location1 Object)
+(location2 Object)
+(location3 Object)
+(location4 Object)
+(location5 Object)
+(location6 Object)
+(location7 Object)
+(location8 Object)
+(location9 Object)
+
+(preconds
+ (block x1) (block x2) (block x3) (block x4) 
+ (block x5) (block x6) (block x7)
+
+ (location location1)(location location2) (location location3)
+ (location location4)(location location5) (location location6)
+ (location location7)(location location8) (location location9)
+
+
+ (left location1 location2) (left location2 location3)
+ (left location4 location5) (left location5 location6)
+ (left location7 location8) (left location8 location9)
+
+ (right location9 location8) (right location8 location7)
+ (right location6 location5) (right location5 location4)
+ (right location3 location2) (right location2 location1)
+
+ (above location1 location4) (above location2 location5)
+ (above location3 location6) (above location4 location7)
+ (above location5 location8) (above location6 location9)
+
+
+ (below location4 location1) (below location5 location2)
+ (below location6 location3) (below location7 location4)
+ (below location8 location5) (below location9 location6)
+
+ (position x1 location1) (position x2 location2)
+ (position x3 location3) (position x4 location4)
+ (position x5 location5) (position x6 location6)
+ (position x7 location7)
+
+ (empty location8) (empty location9))
+
+(effects
+(position x1 location1)
+(position x2 location2)
+(position x3 location3)
+(position x4 location7)
+(position x5 location5)
+(position x6 location6)
+(position x7 location9)
+)

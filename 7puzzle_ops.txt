@@ -1,0 +1,54 @@
+(operator
+ move_up
+ (params
+  (<x> Object)(<y> Object)(<z> Object))
+ 
+ (preconds
+  (clear <z>)(position <x> <y>)(location <y>)
+  (location <z>)(above <z> <y>))
+
+ (effects
+  (del clear <z>)(del position <x> <y>)
+  (clear <y>)(position <x> <z>)))
+
+
+(operator
+ move_left
+ (params
+  (<x> Object) (<y> Object) (<z> Object))
+
+ (preconds
+  (clear <z>)(position <x> <y>)(location <y>)
+  (location <z>) (left <z> <y>))
+
+ (effects
+  (del clear <z>)(del position <x> <y>)
+  (clear <y>)(position <x> <z>)))
+
+
+(operator
+ move_right
+ (params
+  (<x> Object)(<y> Object)(<z> Object))
+
+ (preconds
+  (clear <z>)(position <x> <y>)(location <y>)
+  (location <z>)(right <z> <y>))
+ 
+ (effects
+  (del clear <z>)(del position <x> <y>)
+  (clear <y>)(position <x> <z>)))
+
+
+(operator
+ move_down
+ (params
+  (<x> Object)(<y> Object)(<z> Object))
+
+ (preconds
+  (clear <z>)(position <x> <y>)(location <y>)
+  (location <z>)(below <z> <y>))
+
+ (effects
+  (del clear <z>)(del position <x> <y>)
+  (clear <y>)(position <x> <z>)))
